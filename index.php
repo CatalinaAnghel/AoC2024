@@ -2,8 +2,8 @@
 
 require_once './vendor/autoload.php';
 
-use AdventOfCode2023\Day5\Part1;
+use AdventOfCode2024\Day1\Part1;
 
-$part2 = new Part1('input.txt');
+$part1 = new Part1('test.txt');
 
-echo $part2->solve() . PHP_EOL;
+echo $part1->solve() . PHP_EOL;
