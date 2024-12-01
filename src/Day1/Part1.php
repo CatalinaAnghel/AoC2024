@@ -2,7 +2,6 @@
 
 namespace AdventOfCode2024\Day1;
 
-use AdventOfCode2024\Helper\FileReader;
 
 class Part1 extends AbstractSolution
 {
