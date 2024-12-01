@@ -1,0 +1,10 @@
+{
+    "autoload": {
+        "psr-4": {
+            "AdventOfCode2023\\": "./src"
+        }
+    },
+    "scripts": {
+        "help-elves": "php index.php"
+    }
+}
