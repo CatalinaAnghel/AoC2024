@@ -9,10 +9,6 @@ class Part2 extends AbstractSolution
     public function solve(): int
     {
         $similarityScores = [];
-        
-        
-        array_multisort($this->firstList);
-        array_multisort($this->secondList);
 
         foreach ($this->firstList as $value) {
             $appearances = array_filter($this->secondList, function($element) use($value){
