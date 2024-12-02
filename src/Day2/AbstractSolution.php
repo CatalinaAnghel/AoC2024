@@ -11,9 +11,11 @@ abstract class AbstractSolution
     /**
      * 
      * @param string $fileName
+     * @param int[][] $reports
      */
     public function __construct(
-        private string $fileName
+        private string $fileName,
+        protected array $reports = []
     ){
         $this->init();
     }
@@ -29,6 +31,7 @@ abstract class AbstractSolution
     protected function init(): void
     {     
         $content = $this->getFileContent();
+        $this->reports = array_map(fn ($line) => array_map('intval', explode(' ', $line)), $content);
     }
 
     /**
